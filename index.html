@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shivam Kharola | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#0f172a;
+      color:white;
+    }
+
+    header{
+      width:100%;
+      padding:20px 10%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:fixed;
+      top:0;
+      background:#0f172a;
+      z-index:1000;
+    }
+
+    .logo{
+      font-size:24px;
+      font-weight:700;
+      color:#38bdf8;
+    }
+
+    nav a{
+      margin-left:25px;
+      text-decoration:none;
+      color:white;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#38bdf8;
+    }
+
+    section{
+      min-height:100vh;
+      padding:120px 10%;
+    }
+
+    .hero{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+
+    .hero-text{
+      max-width:600px;
+    }
+
+    .hero-text h1{
+      font-size:55px;
+      margin-bottom:10px;
+    }
+
+    .hero-text h1 span{
+      color:#38bdf8;
+    }
+
+    .hero-text h3{
+      font-size:28px;
+      margin-bottom:20px;
+      color:#94a3b8;
+    }
+
+    .hero-text p{
+      line-height:1.8;
+      margin-bottom:30px;
+      color:#cbd5e1;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 25px;
+      background:#38bdf8;
+      color:#0f172a;
+      text-decoration:none;
+      border-radius:8px;
+      font-weight:600;
+      transition:0.3s;
+      margin-right:15px;
+    }
+
+    .btn:hover{
+      transform:translateY(-3px);
+      background:white;
+    }
+
+    .section-title{
+      text-align:center;
+      font-size:40px;
+      margin-bottom:50px;
+      color:#38bdf8;
+    }
+
+    .about,
+    .skills,
+    .projects,
+    .contact{
+      background:#111c34;
+      border-radius:20px;
+      padding:50px;
+      margin-top:30px;
+    }
+
+    .about p{
+      line-height:2;
+      color:#cbd5e1;
+      text-align:center;
+    }
+
+    .skills-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+    }
+
+    .skill-card{
+      background:#1e293b;
+      padding:25px;
+      border-radius:15px;
+      text-align:center;
+      transition:0.3s;
+    }
+
+    .skill-card:hover{
+      transform:translateY(-5px);
+      background:#243248;
+    }
+
+    .skill-card h3{
+      color:#38bdf8;
+      margin-bottom:10px;
+    }
+
+    .projects-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:25px;
+    }
+
+    .project-card{
+      background:#1e293b;
+      padding:25px;
+      border-radius:15px;
+      transition:0.3s;
+    }
+
+    .project-card:hover{
+      transform:translateY(-5px);
+    }
+
+    .project-card h3{
+      color:#38bdf8;
+      margin-bottom:15px;
+    }
+
+    .project-card p{
+      color:#cbd5e1;
+      line-height:1.7;
+    }
+
+    .contact{
+      text-align:center;
+    }
+
+    .contact p{
+      margin:15px 0;
+      color:#cbd5e1;
+    }
+
+    .contact a{
+      color:#38bdf8;
+      text-decoration:none;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:#0b1120;
+      color:#94a3b8;
+    }
+
+    @media(max-width:768px){
+
+      .hero{
+        flex-direction:column;
+        text-align:center;
+      }
+
+      .hero-text h1{
+        font-size:40px;
+      }
+
+      nav{
+        display:none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Shivam.</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+
+  <section class="hero" id="home">
+
+    <div class="hero-text">
+
+      <h1>Hi, I'm <span>Shivam Kharola</span></h1>
+
+      <h3>Data Analyst | MIS Executive</h3>
+
+      <p>
+        Detail-oriented and data-driven graduate with hands-on experience in
+        Data Analysis, Excel, SQL, Power BI and Python. Passionate about
+        creating dashboards and extracting business insights from data.
+      </p>
+
+      <a href="#" class="btn">Download Resume</a>
+      <a href="#projects" class="btn">View Projects</a>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section id="about">
+
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about">
+
+      <p>
+        I am a BCA graduate specializing in Cyber Security with internship
+        experience in Data Analytics and Dashboard Development.
+        I have worked on multiple projects using Excel, Power BI, SQL,
+        and Python to analyze data and visualize trends.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- SKILLS -->
+
+  <section id="skills">
+
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills">
+
+      <div class="skills-container">
+
+        <div class="skill-card">
+          <h3>Excel</h3>
+          <p>Data Cleaning, Reports, Dashboards</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Power BI</h3>
+          <p>Interactive Dashboard Development</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>SQL</h3>
+          <p>Database Queries & Analysis</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Python</h3>
+          <p>Pandas, Data Analysis, Visualization</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+
+  <section id="projects">
+
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects">
+
+      <div class="projects-container">
+
+        <div class="project-card">
+          <h3>Global Hunger Index Analysis</h3>
+
+          <p>
+            Analyzed global hunger datasets using Excel.
+            Performed data cleaning, transformation and
+            created charts & dashboards to visualize trends.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>Life Expectancy Dashboard</h3>
+
+          <p>
+            Developed Power BI dashboard using datasets from
+            100+ countries and identified the relationship
+            between GDP and life expectancy.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>Sales Performance Dashboard</h3>
+
+          <p>
+            Built interactive Power BI dashboard to analyze
+            monthly revenue, profits and top-performing products.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>Python Data Analysis</h3>
+
+          <p>
+            Used Python and Pandas for data cleaning,
+            preprocessing and basic exploratory data analysis.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="contact">
+
+      <p>Email: shivamkharola779@gmail.com</p>
+
+      <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/shivam-k-a18720251/" target="_blank">
+          Click Here
+        </a>
+      </p>
+
+      <p>
+        GitHub:
+        <a href="https://github.com/2000S-c" target="_blank">
+          Click Here
+        </a>
+      </p>
+
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 Shivam Kharola | Portfolio Website
+  </footer>
+
+</body>
+</html>
